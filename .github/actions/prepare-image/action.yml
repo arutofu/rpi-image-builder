@@ -13,7 +13,10 @@ runs:
 
         ## Get an image ##
         wget ${{ inputs.zip-image-path }}
-        xz -d *img.xz
+
+        #xz -d *img.xz    # for .img.xz
+        unzip *.zip       # for .zip
+
         mv *img raspios.img
 
         ## Install required packages ## 
