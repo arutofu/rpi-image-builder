@@ -14,12 +14,8 @@ runs:
         ## Get an image ##
         wget ${{ inputs.zip-image-path }}
 
-        sudo ls
-
         #xz -d *img.xz    # for .img.xz
-        unzip *.zip       # for .zip
-        
-        sudo ls
+        unzip *raspios-buster-armhf-lite.zip       # for .zip
         
         mv *img raspios.img
 
