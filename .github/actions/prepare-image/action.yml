@@ -16,7 +16,9 @@ runs:
 
         #xz -d *img.xz    # for .img.xz
         unzip *.zip       # for .zip
-
+        
+        sudo ls
+        
         mv *img raspios.img
 
         ## Install required packages ## 
